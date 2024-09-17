@@ -15,9 +15,9 @@ search this in qb-vehiclekeys/client/main.lua
 
 for old repository qb-vehiclekeys
 
-RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
-    LockpickDoor(isAdvanced)
-end)
+    RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
+        LockpickDoor(isAdvanced)
+    end)
 
 for new repository qb-vehiclekeys
 
@@ -97,10 +97,10 @@ RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
 to make game shorter / faster adjust the time from the OpenDevice function in client.lua
 see below example for time adjustment
 
-function OpenDevice(successCallback, target, time)
-    SetNuiFocus(true, true)
-    time = 50  -- Change to suit your needs 
-    SendNUIMessage({type = "open", target = target, time = time})
+    function OpenDevice(successCallback, target, time)
+        SetNuiFocus(true, true)
+        time = 50  -- Change to suit your needs 
+        SendNUIMessage({type = "open", target = target, time = time})
 
 
 
