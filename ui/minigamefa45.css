@@ -1,0 +1,214 @@
+@font-face {
+    font-family: "Font Awesome 5 Free";
+    font-style: normal;
+    font-weight: 900;
+    font-display: block;
+    src: url(https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-solid-900.eot);
+    src: url(https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-solid-900.eot?#iefix) format("embedded-opentype"),
+         url(https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-solid-900.woff2) format("woff2"),
+         url(https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-solid-900.woff) format("woff"),
+         url(https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-solid-900.ttf) format("truetype"),
+         url(https://use.fontawesome.com/releases/v5.15.2/webfonts/fa-solid-900.svg#fontawesome) format("svg")
+}
+
+.fa, .fas {
+    font-family: "Font Awesome 5 Free", sans-serif;
+    font-weight: 900
+}
+
+/*!
+ * Game
+ */
+
+ body{
+    display: none;
+    overflow: hidden;
+    margin: 0;
+    font-family: "Noto Sans JP", sans-serif;
+}
+
+.main-app-container {
+    height: 100vh;
+    max-height: 100vh;
+    min-height: 100vh;
+    width: 100vw;
+    max-width: 100vw;
+    min-width: 100vw;
+    margin: 0!important;
+    padding: 0!important;
+    border: 0!important;
+    outline: 0!important;
+    overflow: hidden;
+    position: relative;
+}
+.main-container-back {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    max-width: 100vw;
+    min-width: 100vw;
+    max-height: 100vh;
+    min-height: 100vh;
+    pointer-events: none;
+    border: 0px !important;
+    margin: 0px !important;
+    outline: 0px !important;
+    padding: 0px !important;
+    overflow: hidden !important;
+}
+.main-border {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    z-index: 100;
+    transition: visibility 400ms ease-out 0s;
+    visibility: visible;
+    align-items: center;
+    pointer-events: all;
+    justify-content: center;
+}
+
+
+.title{
+    text-align: center;
+    color: white;
+}
+
+.dots_value{
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+}
+.minigame{
+    display: none;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    width: 540px;
+    min-width: 540px;
+    border: 10px solid #122129;
+    max-width: 540px;
+    background-color: #122129;
+}
+.splash{
+    display: inline-block;
+    width: 100%;
+    margin: 220px auto;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    user-select: none;
+}
+.splash .hacker{
+    font-size: 65px;
+    margin-bottom: 30px;
+}
+.game-canvas{
+    margin: 0;
+    border-radius: 10;
+    background-color: #0c2332;
+    border-radius: 10px;
+}
+.hidden {
+    display: none;
+}
+.header{
+    padding: 10px;
+    padding-top: 0;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.header svg{
+    fill: #47525b;
+    width: 30px;
+}
+
+.header p{
+    text-align: center;
+    font-size: 15px;
+    margin-left: 15px;
+}
+
+.glow{
+    font-weight: bold;
+    color: #22d8b7;
+    text-shadow:
+      0 0 7px #3aaa967a,
+      0 0 10px #3aaa967a,
+      0 0 21px #3aaa967a,
+      0 0 42px #3aaa967a,
+      0 0 82px #3aaa967a,
+      0 0 92px #3aaa967a,
+      0 0 102px #3aaa967a,
+      0 0 151px #3aaa967a;
+}
+
+.gray{
+    color: #ffffff77;
+    margin-top: 15px;
+    font-size: 12px !important;
+}
+
+.rotate-container{
+    width: 100%;
+    display: flex;
+    margin-top: 10px;
+    justify-content: space-between;
+}
+
+.rotate-btn {
+    width: 49%;
+    background-color: #6a468559; 
+    color: #8752af; 
+    padding: 8px 10px; 
+    font-size: 14px;
+    font-weight: 600;
+    border: none; 
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: "Noto Sans JP", sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.rotate-btn:hover {
+    background-color: #6a46856c; 
+}
+
+.rotate-btn:active {
+    background-color: #6a46858a;
+}
+
+.unlock-btn {
+    width: 100%;
+    background-color: #22d8b72c; 
+    color: #22d8b7; 
+    padding: 8px 10px; 
+    font-size: 14px;
+    font-weight: 600;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    font-family: "Noto Sans JP", sans-serif;
+    transition: background-color 0.3s ease; 
+}
+
+.unlock-btn:hover {
+    background-color: #22d8b738; 
+}
+
+.unlock-btn:active {
+    background-color: #22d8b73f; /* Even darker purple background when clicked */
+}
+
+
+.unlock-container{
+    margin-top: 10px;
+}
