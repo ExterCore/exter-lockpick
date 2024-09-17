@@ -1,18 +1,25 @@
--- qb-vehiclekeys usage
+# exter-lockpick
+EXTER-LOCKPICK TAKES INSPIRATION FROM ONE OF THE ROLEPLAY SERVERS, NOPIXEL 4.0
 
--- STEP 1 : DELETED qb-lockpick
--- STEP 2 : FOLLOW THESE INSTRUCTIONS
+![npx](https://github.com/user-attachments/assets/fbc2e0b9-a833-4b05-a205-9ab9b958dd57)
 
 
--- search this in qb-vehiclekeys/client/main.lua
+qb-vehiclekeys usage
 
--- for old repository qb-vehiclekeys
+STEP 1 : DELETED qb-lockpick
+
+STEP 2 : FOLLOW THESE INSTRUCTIONS
+
+
+search this in qb-vehiclekeys/client/main.lua
+
+for old repository qb-vehiclekeys
 
 RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
     LockpickDoor(isAdvanced)
 end)
 
--- for new repository qb-vehiclekeys
+for new repository qb-vehiclekeys
 
 RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
     local ped = PlayerPedId()
@@ -52,9 +59,9 @@ RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
             TriggerServerEvent('qb-vehiclekeys:server:breakLockpick', 'lockpick')
         end
     end
-end)
+    end)
 
--- and replace with this code
+and replace with this code
 
 RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
     local ped = PlayerPedId()
@@ -85,12 +92,18 @@ RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
             AttemptPoliceAlert("steal")
         end
     end, vehicle, isAdvanced and 'advanced' or 'normal')  -- Adjust parameters as needed
-end)
+    end)
 
--- to make game shorter / faster adjust the time from the OpenDevice function in client.lua
--- see below example for time adjustment
+to make game shorter / faster adjust the time from the OpenDevice function in client.lua
+see below example for time adjustment
 
 function OpenDevice(successCallback, target, time)
     SetNuiFocus(true, true)
     time = 50  -- Change to suit your needs 
     SendNUIMessage({type = "open", target = target, time = time})
+
+
+
+
+ORIGINAL REPOSITORY
+( https://github.com/MaximilianAdF/NoPixel-MiniGames-4.0 )
