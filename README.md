@@ -21,10 +21,10 @@ for old repository qb-vehiclekeys
 
 for new repository qb-vehiclekeys
 
-RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
-    local ped = PlayerPedId()
-    local pos = GetEntityCoords(ped)
-    local vehicle = QBCore.Functions.GetClosestVehicle()
+    RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
+        local ped = PlayerPedId()
+        local pos = GetEntityCoords(ped)
+        local vehicle = QBCore.Functions.GetClosestVehicle()
 
     if vehicle == nil or vehicle == 0 then return end
     if HasKeys(QBCore.Functions.GetPlate(vehicle)) then return end
@@ -63,10 +63,10 @@ RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
 
 and replace with this code
 
-RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
-    local ped = PlayerPedId()
-    local pos = GetEntityCoords(ped)
-    local vehicle = QBCore.Functions.GetClosestVehicle()
+    RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
+        local ped = PlayerPedId()
+        local pos = GetEntityCoords(ped)
+        local vehicle = QBCore.Functions.GetClosestVehicle()
 
     if vehicle == nil or vehicle == 0 then return end
     if HasKeys(QBCore.Functions.GetPlate(vehicle)) then return end
