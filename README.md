@@ -1,5 +1,5 @@
 # exter-lockpick
-EXTER-LOCKPICK TAKES INSPIRATION FROM ONE OF THE ROLEPLAY SERVERS, NOPIXEL 4.0
+## EXTER-LOCKPICK TAKES INSPIRATION FROM ONE OF THE ROLEPLAY SERVERS, NOPIXEL 4.0
 
 ![npx](https://github.com/user-attachments/assets/862fbc2f-7d6c-4631-8660-4f44b8ba458c)
 
@@ -14,13 +14,13 @@ STEP 2 : FOLLOW THESE INSTRUCTIONS
 
 search this in qb-vehiclekeys/client/main.lua
 
-for old repository qb-vehiclekeys
+## for old repository qb-vehiclekeys
 
     RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
         LockpickDoor(isAdvanced)
     end)
 
-for new repository qb-vehiclekeys
+## for new repository qb-vehiclekeys
 
     RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
         local ped = PlayerPedId()
@@ -62,7 +62,7 @@ for new repository qb-vehiclekeys
     end
     end)
 
-and replace with this code
+## and replace with this code
 
     RegisterNetEvent('lockpicks:UseLockpick', function(isAdvanced)
         local ped = PlayerPedId()
