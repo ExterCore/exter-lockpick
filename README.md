@@ -1,7 +1,8 @@
 # exter-lockpick
 EXTER-LOCKPICK TAKES INSPIRATION FROM ONE OF THE ROLEPLAY SERVERS, NOPIXEL 4.0
 
-![npx](https://github.com/user-attachments/assets/fbc2e0b9-a833-4b05-a205-9ab9b958dd57)
+![npx](https://github.com/user-attachments/assets/862fbc2f-7d6c-4631-8660-4f44b8ba458c)
+
 
 
 qb-vehiclekeys usage
